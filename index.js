@@ -44,6 +44,10 @@ app.post('/signup', async (req, res) => {
     }
 
 })
+app.get("/", (req, res) => {
+    res.json("welcome to vercel hosting");
+})
+
 
 app.listen(PORT, () => {
     console.log('server running on ', PORT)
